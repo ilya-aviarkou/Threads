@@ -24,9 +24,7 @@ struct LoginView: View {
                     TextField("Username", text: $username)
                     SecureField("Password", text: $password)
                 }
-                .padding()
-                .background(Color(.systemGray6))
-                .cornerRadius(10)
+                .modifier(ThreadsTextFieldModifier())
             }
             .padding(.top, 18)
             
@@ -44,20 +42,16 @@ struct LoginView: View {
                 
             }label: {
                 Text("Login")
-                    .foregroundColor(.white)
-                    .font(.headline)
             }
-            .padding()
-            .frame(maxWidth: .infinity)
-            .background(.black)
-            .cornerRadius(10)
+            .modifier(ThreadsButtonModifier())
             
             Spacer()
             
             Divider()
             
                 NavigationLink {
-                    Text("Forgot password")
+                    SignUpView()
+                        .navigationBarHidden(true)
                 }label: {
                     HStack {
                         Text("Don't have an account?")
