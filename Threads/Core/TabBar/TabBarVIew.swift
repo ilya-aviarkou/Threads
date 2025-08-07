@@ -11,12 +11,12 @@ struct TabBarVIew: View {
 
     var body: some View {
       TabView {
-          Text("Feed View")
+          FeedView()
               .tabItem {
                   Image(systemName: "house")
               }
           
-          Text("Explore")
+          ExploreView()
               .tabItem {
                   Image(systemName: "magnifyingglass")
               }
@@ -26,12 +26,12 @@ struct TabBarVIew: View {
                   Image(systemName: "plus")
               }
           
-          Text("Feed View")
+          ActivityView()
               .tabItem {
                   Image(systemName: "heart")
               }
           
-          Text("Feed View")
+          ProfileView()
               .tabItem {
                   Image(systemName: "person")
               }
