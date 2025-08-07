@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct ThreadsButtonModifier: ViewModifier {
-    func body(content: Content) -> some View {
-        content
-            .foregroundColor(.white)
-            .font(.headline)
-            .padding()
-            .frame(maxWidth: .infinity)
-            .background(.black)
-            .cornerRadius(10)
-    }
+  func body(content: Content) -> some View {
+    content
+      .foregroundColor(.white)
+      .font(.headline)
+      .padding()
+      .frame(maxWidth: .infinity)
+      .background(.black)
+      .cornerRadius(10)
+  }
 }

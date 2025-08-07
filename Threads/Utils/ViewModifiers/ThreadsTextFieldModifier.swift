@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct ThreadsTextFieldModifier: ViewModifier {
-    func body(content: Content) -> some View {
-        content
-            .padding()
-            .background(Color(.systemGray6))
-            .cornerRadius(10)
-    }
+  func body(content: Content) -> some View {
+    content
+      .padding()
+      .background(Color(.systemGray6))
+      .cornerRadius(10)
+  }
 }
