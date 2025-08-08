@@ -14,11 +14,7 @@ struct ThreadCell: View {
         VStack {
 
             HStack (alignment: .top){
-                Image("profile-debug-image")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 50, height: 50)
-                    .clipShape(Circle())
+                CircledProfileImage()
                 
                 VStack (alignment: .leading, spacing: 4){
                     HStack{
